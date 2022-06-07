@@ -1,0 +1,31 @@
+﻿@model Experiences
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-fluid">
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Position">Position</label>
+                <input asp-for="Position" class="form-control" placeholder="Position">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="WorkPlace">WorkPlace</label>
+                <input asp-for="WorkPlace" class="form-control" placeholder="WorkPlace">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="AboutWork">AboutWork</label>
+                <input asp-for="AboutWork" class="form-control" placeholder="AboutWork">
+            </div>
+        </div>
+        <div class="form-group">
+            <button asp-controller="Experience" asp-action="Create" type="submit" class="btn btn-primary">Create</button>
+            <button asp-controller="Experience" asp-action="Index" class="btn btn-md rounded font-sm hover-up btn-primary">Go Back</button>
+
+        </div>
+    </form>
+</div>
+

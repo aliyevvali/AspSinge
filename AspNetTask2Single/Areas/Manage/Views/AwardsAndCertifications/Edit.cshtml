@@ -1,0 +1,19 @@
+﻿@model AwardsAndCertifications
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container-fluid">
+    <form method="post">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Awards">Awards</label>
+                <input asp-for="Awards" class="form-control" placeholder="Awards">
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,22 @@
+﻿@model Interests
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-fluid">
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Interest">Interest</label>
+                <input asp-for="Interest" class="form-control" placeholder="Interest">
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <button asp-controller="Interests" asp-action="Create" type="submit" class="btn btn-primary">Create</button>
+            <button asp-controller="Interests" asp-action="Index" class="btn btn-md rounded font-sm hover-up btn-primary">Go Back</button>
+
+        </div>
+    </form>
+</div>
+

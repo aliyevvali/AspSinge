@@ -1,0 +1,29 @@
+﻿@model Education
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-fluid">
+    <form method="post">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Uni">Uni</label>
+                <input asp-for="Uni" class="form-control" placeholder="Uni">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Faculty">Faculty</label>
+                <input asp-for="Faculty" class="form-control" placeholder="Faculty">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="Profession">Profession</label>
+                <input asp-for="Profession" class="form-control" placeholder="Profession">
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </div>
+    </form>
+</div>
+

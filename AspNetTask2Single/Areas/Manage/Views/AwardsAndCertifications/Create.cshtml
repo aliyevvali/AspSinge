@@ -1,0 +1,22 @@
+﻿@model AwardsAndCertifications
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-fluid">
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Awards">Awards</label>
+                <input asp-for="Awards" class="form-control" placeholder="Awards">
+            </div>
+
+        </div>
+        <div class="form-group">
+            <button asp-controller="AwardsAndCertifications" asp-action="Create" type="submit" class="btn btn-primary">Create</button>
+            <button asp-controller="AwardsAndCertifications" asp-action="Index" class="btn btn-md rounded font-sm hover-up btn-primary">Go Back</button>
+
+        </div>
+    </form>
+</div>
+
